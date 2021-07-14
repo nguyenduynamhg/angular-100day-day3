@@ -1,4 +1,17 @@
-<hello name="{{ name }}"></hello>
+{{ name }}
 <p>
   Start editing to see some magic happen :)
 </p>
+<p>{{hoa.name}}</p>
+<p>{{hoa.age}}</p>
+
+<input type="text" [value]="hoa.name">
+<br>
+<br>
+<input type="text" [value]="hoa.age">
+<br>
+<br>
+<button  (click)="handle()"> click me</button>
+<br>
+<br>
+<input type="text" [(ngModel)]="name" />
